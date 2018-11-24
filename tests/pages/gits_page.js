@@ -1,14 +1,16 @@
-class Gits {
-    desc = "input[name='gist[description]']";
-    filename = "input[name='gist[contents][][name]']";
-    indentMode = "select#indent-mode";
-    indentSize = "select#indent-size";
-    indentWrapMode = "select#indent-line-wrap-mode";
-    textFieldContainer = "div.CodeMirror-scroll";
-    textPerLine = "span[role='presentation']";
+import { Selector } from 'testcafe';
 
+export default class Gits {
 
-    inputDesc() {
-
+    constructor () {
+        this.url                = Selector("https://gist.github.com/");
+        this.addNewGits         = Selector("a.HeaderNavlink.text-bold.pr-3");
+        this.desc               = Selector("input[name='gist[description]']");
+        this.filename           = Selector("input[name='gist[contents][][name]']");
+        this.indentMode         = Selector("select#indent-mode");
+        this.indentSize         = Selector("select#indent-size");
+        this.indentWrapMode     = Selector("select#indent-line-wrap-mode");
+        this.textFieldContainer = Selector("div.CodeMirror-scroll");
+        this.textPerLine        = Selector("span[role='presentation']");
     }
 }
