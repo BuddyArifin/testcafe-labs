@@ -1,0 +1,21 @@
+{
+  "name": "ui-test-testcafe",
+  "version": "1.0.0",
+  "description": "Ui Testing using Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js tests/features/*.feature"
+  },
+  "keywords": [
+    "Sample",
+    "TestCafe",
+    "with",
+    "Cucumber"
+  ],
+  "author": "Buddy Arifin",
+  "license": "MIT",
+  "devDependencies": {
+    "cucumber": "^5.0.2",
+    "testcafe": "^0.23.2"
+  }
+}
